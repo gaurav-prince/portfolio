@@ -1,3 +1,4 @@
+import "../App.css";
 let Header = () => {
   return (
     <>
@@ -11,8 +12,11 @@ let Header = () => {
               height="24"
             />
           </a>
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav">
+          <div
+            className="collapse navbar-collapse header-menu d-flex flex-row-reverse"
+            id="navbarNavDropdown"
+          >
+            <ul className="navbar-nav me-auto mb-2 ">
               <li className="nav-item">
                 <a className="nav-link" href="#about">
                   About
