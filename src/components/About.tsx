@@ -1,49 +1,48 @@
 let About = () => {
   return (
-    <>
-      <div className="container py-4">
-        <div className="p-5 mb-4 rounded-3">
-          <div className="h-100 p-5">
-            <h1 className="display-5 fw-bold hello-text">Hi All, I'm Gaurav</h1>
-            <p className="col-md-8 fs-4">
-              <span id="desc-text">
-                I'm a Full Stack Software Developer having a Software
-                Development experience of 6+ years with JavaScript / NodeJS /
-                Angular / React and some other libraries and frameworks.
-              </span>
-            </p>
-            <button
-              className="btn rounded-circle"
-              type="button"
-              id="btn-github"
-            >
-              <i className="bi bi-github"></i>
-            </button>
-            <button
-              className="btn rounded-circle"
-              type="button"
-              id="btn-linkedin-social"
-            >
-              <i className="bi bi-linkedin"></i>
-            </button>
-            <button
-              className="btn rounded-circle"
-              type="button"
-              id="btn-google"
-            >
-              <i className="bi bi-google"></i>
-            </button>
-            <button
-              className="btn rounded-circle"
-              type="button"
-              id="btn-twitter"
-            >
-              <i className="bi bi-twitter"></i>
-            </button>
-          </div>
+    <div className="container py-4" id="about">
+      <div className="p-5 mb-4 rounded-3">
+        <div className="h-100 p-5">
+          <h1 className="display-5 fw-bold hello-text">Hi All, I'm Gaurav</h1>
+          <p className="col-md-8 fs-4">
+            <span id="desc-text">
+              Passionate full stack developer with a knack for crafting
+              seamless, user-centric web solutions. Proficient in front-end and
+              back-end technologies, with a commitment to delivering exceptional
+              user experiences and driving digital growth.
+            </span>
+          </p>
+          <button
+            className="btn btn-light rounded-circle social"
+            type="button"
+            id="btn-github"
+          >
+            <i className="bi bi-github"></i>
+          </button>
+          <button
+            className="btn btn-light rounded-circle social"
+            type="button"
+            id="btn-linkedin-social"
+          >
+            <i className="bi bi-linkedin"></i>
+          </button>
+          <button
+            className="btn btn-light rounded-circle social"
+            type="button"
+            id="btn-google"
+          >
+            <i className="bi bi-google"></i>
+          </button>
+          <button
+            className="btn btn-light rounded-circle social"
+            type="button"
+            id="btn-twitter"
+          >
+            <i className="bi bi-twitter"></i>
+          </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

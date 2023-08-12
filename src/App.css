@@ -48,6 +48,12 @@ body {
 .checkbox-switch {
   margin: 0.5rem;
 }
+
+.social {
+  color: whitesmoke;
+  margin: 0.5rem;
+}
+
 #headerImage {
   width: 10%;
   height: 10%;
@@ -58,17 +64,22 @@ body {
   margin: 1rem;
 }
 
-#btn-github {
+/* #btn-github {
   color:#333333
-}
+} */
 #btn-cv {
   padding: 0.5rem;
 }
 
 #job-title-text {
-  color: #e73b3b
+  color: white
 }
 
 #name-text {
   color:rgb(218, 246, 9)
 }
+
+#desc-text {
+  color: rgb(184, 197, 192)
+}
+
