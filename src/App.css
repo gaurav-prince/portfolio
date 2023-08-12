@@ -1,4 +1,74 @@
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+}
+
 .header-menu {
   float: right;
+  align-items: end !important;
+  margin-right: 2rem;
+}
+
+.nav-link {
+  display:inline-block;
+  padding:15px;
+  color: white !important;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+  color: aquamarine;
+}
+
+.nav-item:hover {
+  color: Blue;
+  border-bottom: 3px solid rgb(255, 255, 255); 
+}
+.navbar-brand {
+  padding-left: 2rem;
+}
+
+.main {
+  background-attachment: fixed !important;
+  /* background: linear-gradient(to bottom, #1e5799 0%, #7db9e8 100%); */
+
+  /* background: linear-gradient(to bottom, #182F6F 0%, #091128 100%); */
+  background: linear-gradient(to bottom, #5C39FF 0%, #09061A 100%) !important;
+
   
+}
+
+
+.hello-text {
+  color: aliceblue;
+}
+
+.linkedin-text {
+  padding-left: 0.5rem;
+} 
+.checkbox-switch {
+  margin: 0.5rem;
+}
+#headerImage {
+  width: 10%;
+  height: 10%;
+}
+
+#btn-linkedin {
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+#btn-github {
+  color:#333333
+}
+#btn-cv {
+  padding: 0.5rem;
+}
+
+#job-title-text {
+  color: #e73b3b
+}
+
+#name-text {
+  color:rgb(218, 246, 9)
 }

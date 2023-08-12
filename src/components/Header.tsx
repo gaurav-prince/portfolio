@@ -1,21 +1,22 @@
 import "../App.css";
+import headerLightImgUrl from "../assets/logo_3.png";
+// import headerDarkImgUrl from "../assets/logo_light.png";
+
 let Header = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <img
-              src="../assets/react.svg"
+              src={headerLightImgUrl}
               alt="Gaurav Prince"
-              width="30"
-              height="24"
+              id="headerImage"
+              //   width="30"
+              //   height="24"
             />
           </a>
-          <div
-            className="collapse navbar-collapse header-menu d-flex flex-row-reverse"
-            id="navbarNavDropdown"
-          >
+          <div className="header-menu" id="navbarNavDropdown">
             <ul className="navbar-nav me-auto mb-2 ">
               <li className="nav-item">
                 <a className="nav-link" href="#about">
@@ -39,8 +40,18 @@ let Header = () => {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#contact">
-                  Contact
+                  Contact Me
                 </a>
+              </li>
+              <li className="checkbox-switch">
+                <div className="form-switch">
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="darkswitch"
+                  />
+                </div>
               </li>
             </ul>
           </div>
