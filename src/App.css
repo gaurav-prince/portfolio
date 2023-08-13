@@ -1,5 +1,6 @@
 body {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+  color: #fff !important;
 }
 
 .header-menu {
@@ -9,8 +10,8 @@ body {
 }
 
 .nav-link {
-  display:inline-block;
-  padding:15px;
+  display: inline-block;
+  padding: 15px;
   color: white !important;
 }
 
@@ -21,8 +22,9 @@ body {
 
 .nav-item:hover {
   color: Blue;
-  border-bottom: 3px solid rgb(255, 255, 255); 
+  border-bottom: 3px solid rgb(255, 255, 255);
 }
+
 .navbar-brand {
   padding-left: 2rem;
 }
@@ -34,7 +36,7 @@ body {
   /* background: linear-gradient(to bottom, #182F6F 0%, #091128 100%); */
   background: linear-gradient(to bottom, #5C39FF 0%, #09061A 100%) !important;
 
-  
+
 }
 
 
@@ -44,7 +46,8 @@ body {
 
 .linkedin-text {
   padding-left: 0.5rem;
-} 
+}
+
 .checkbox-switch {
   margin: 0.5rem;
 }
@@ -61,6 +64,7 @@ body {
 .experience-card {
   margin: 1rem;
 }
+
 #headerImage {
   width: 10%;
   height: 10%;
@@ -83,7 +87,7 @@ body {
 }
 
 #name-text {
-  color:rgb(218, 246, 9)
+  color: rgb(218, 246, 9)
 }
 
 #desc-text {
@@ -173,6 +177,7 @@ body {
   padding-top: 1.5rem;
   line-height: normal;
 }
+
 .experience-text-date {
   text-align: center;
   color: blue;
