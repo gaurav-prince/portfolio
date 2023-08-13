@@ -1,6 +1,6 @@
 let Contact = () => {
   return (
-    <div className="container">
+    <div className="container" id="contact">
       <h1 className="">A cup of tea/coffee?</h1>
       <button className="btn btn-light social" type="button" id="btn-github">
         <i className="bi bi-github"></i>

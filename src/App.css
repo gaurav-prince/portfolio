@@ -16,12 +16,12 @@ body {
 }
 
 .nav-link:hover {
-  font-weight: bold;
+  /* font-weight: bold; */
   color: aquamarine;
 }
 
 .nav-item:hover {
-  color: Blue;
+  /* color: Blue; */
   border-bottom: 3px solid rgb(255, 255, 255);
 }
 
@@ -30,18 +30,56 @@ body {
 }
 
 .main {
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
   background-attachment: fixed !important;
+  /* background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%); */
+  
   /* background: linear-gradient(to bottom, #1e5799 0%, #7db9e8 100%); */
 
   /* background: linear-gradient(to bottom, #182F6F 0%, #091128 100%); */
-  background: linear-gradient(to bottom, #5C39FF 0%, #09061A 100%) !important;
+  /* background: linear-gradient(to bottom, #5C39FF 0%, #09061A 100%) !important; */
 
 
 }
 
+.card {
+  background: transparent !important;
+  color:white !important;
+  border: #0093E9 1px solid !important;
+  
+}
 
+.card:hover {
+  box-shadow: #4a99c7 3px 3px 3px;
+  background-color: #0093E9 !important;
+}
+.project-size {
+  float: right;
+  align-items: end !important;
+  font-size: smaller !important;
+}
+.project-language {
+  font-size: smaller !important;
+}
 .hello-text {
   color: aliceblue;
+}
+
+.skill-inline {
+  display: inline-block;
+  /* align-items: center; */
+  margin-bottom: 20px;
+  margin-right: 20px
+}
+p {
+  font-size: small;
+}
+.dev-icons {
+  font-size: 3rem;
+  list-style: none
 }
 
 .linkedin-text {
@@ -94,6 +132,10 @@ body {
   color: rgb(184, 197, 192)
 }
 
+#contact {
+  display:flexbox;
+  align-items: center !important;
+}
 /* experience card */
 .experience-card {
   position: relative;
