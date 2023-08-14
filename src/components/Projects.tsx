@@ -61,7 +61,9 @@ let Projects = () => {
       <h1 className="display-5 fw-bold">Open Source Projects!</h1>
       <div className="row">{projectCards}</div>
       <div className="h-100 d-flex align-items-center justify-content-center">
-        <button className="btn btn-outline-light">More Projects</button>
+        <button className="btn btn-outline-light more-projects">
+          More Projects
+        </button>
       </div>
     </div>
   );

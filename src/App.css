@@ -1,5 +1,6 @@
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+  /* color: #fff !important; */
   color: #fff !important;
 }
 
@@ -23,6 +24,7 @@ body {
 .nav-item:hover {
   /* color: Blue; */
   border-bottom: 3px solid rgb(255, 255, 255);
+  /* color: #0093E9 !important; */
 }
 
 .navbar-brand {
@@ -31,9 +33,12 @@ body {
 
 .main {
   background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  background-image: linear-gradient(160deg, #0093E9 0%, #01aac7 100%);
 
-  background-attachment: fixed !important;
+  /* background: #780206; 
+background: linear-gradient(to right, #061161, #780206);  */
+
+  /* background-attachment: fixed; */
   /* background-color: #8BC6EC;
   background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%); */
   
@@ -45,16 +50,22 @@ body {
 
 }
 
+.dark {
+  background-image: radial-gradient( circle 815px at 23.4% -21.8%,  rgba(9,29,85,1) 0.2%, rgba(0,0,0,1) 100.2% );
+}
+
 .card {
   background: transparent !important;
   color:white !important;
-  border: #0093E9 1px solid !important;
+  border: #46bedc 1px solid !important;
   
 }
-
+.more-projects:hover {
+ color: #0093E9 !important;
+}
 .card:hover {
   box-shadow: #4a99c7 3px 3px 3px;
-  background-color: #0093E9 !important;
+  background-color: #51e1f7 !important;
 }
 .project-size {
   float: right;
@@ -67,12 +78,25 @@ body {
 .hello-text {
   color: aliceblue;
 }
+.header-brand {
+  display: inline;
+  padding-left: 2px;
+  color: whitesmoke;
+}
 
+.header-brand:hover {
+  color: #b5d3e4 !important;
+}
 .skill-inline {
   display: inline-block;
   /* align-items: center; */
   margin-bottom: 20px;
   margin-right: 20px
+}
+
+.skill-inline:hover {
+  /* box-shadow: #4a99c7 3px 3px 3px; */
+  color: #0093E9 !important;
 }
 p {
   font-size: small;
@@ -91,18 +115,46 @@ p {
 }
 
 .social {
-  color: whitesmoke;
+  color:#0093E9  !important;
   margin: 0.5rem;
 }
 
+.social:hover {
+  color: #0093E9  !important;
+  background: white;
+}
 .project-card {
   margin: 0.5rem;
+  background-color: #46bedc !important;
+  /* box-shadow: #b5d3e4 0px 10px 30px -15px; */
 }
 
-.experience-card {
+.skill-row {
   margin: 1rem;
+  padding-top: 1rem;
+}
+.experience-card-own {
+  margin: 1rem;
+  border: #0093E9 solid;
+  border-radius: 2%;
+
+  /* padding: 2; */
 }
 
+.company-icon {
+  position: relative;
+  width: 20% !important;
+  height: 100%;
+  /* margin-left: 12%; */
+
+}
+.company-name {
+ /* border-right: #0093E9 2px solid; */
+}
+
+#skill-text {
+  font-size: larger;
+}
 #headerImage {
   width: 10%;
   height: 10%;
@@ -113,6 +165,29 @@ p {
   margin: 1rem;
 }
 
+#btn-linkedin:hover {
+  color: #0093E9;
+}
+
+#brand-name {
+  padding-left: 0.5rem;
+}
+#programmer {
+  border-radius: 10% 30% 50% 70%;
+}
+
+#person-hello {
+  border-radius: 60% 60% 60% 60%;
+  width: 120%;
+  height: 100%;
+}
+
+#skill-img {
+  border-radius: 50% 20% / 10% 40%;
+  width: 75%;
+  height: 75%;
+  margin-top: 10%;
+}
 /* #btn-github {
   color:#333333
 } */
@@ -120,6 +195,9 @@ p {
   padding: 0.5rem;
 }
 
+#btn-cv:hover {
+  color: #0093E9;
+}
 #job-title-text {
   color: white
 }
@@ -129,7 +207,8 @@ p {
 }
 
 #desc-text {
-  color: rgb(184, 197, 192)
+  color: aliceblue !important;
+
 }
 
 #contact {
@@ -236,4 +315,17 @@ p {
 .experience-text-details {
   padding: 1.5rem;
   margin-top: 2rem;
+}
+.hamburger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  /* .hamburger-menu {
+    display: flex;
+  } */
+
+  .header-menu {
+    display: none;
+  }
 }

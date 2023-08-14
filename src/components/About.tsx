@@ -1,10 +1,11 @@
+import personIllustration from "../assets/person-namaste.svg";
 let About = () => {
   return (
     <div className="container py-4" id="about">
-      <div className="p-5 mb-4 rounded-3">
-        <div className="h-100 p-5">
+      <div className="row p-5 mb-4 rounded-3">
+        <div className="col-md-8 h-100 p-5">
           <h1 className="display-5 fw-bold hello-text">Hi All, I'm Gaurav</h1>
-          <p className="col-md-8 fs-4">
+          <p className="fs-4">
             <span id="desc-text">
               Passionate full stack developer with a knack for crafting
               seamless, user-centric web solutions. Proficient in front-end and
@@ -40,6 +41,9 @@ let About = () => {
           >
             <i className="bi bi-twitter"></i>
           </button>
+        </div>
+        <div className="col-md-4 image">
+          <img src={personIllustration} alt="programmer" id="person-hello" />
         </div>
       </div>
     </div>

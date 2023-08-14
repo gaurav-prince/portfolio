@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee, faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import {
   faHtml5,
   faCss3Alt,
@@ -10,18 +10,21 @@ import {
   faDocker,
   faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
+import skillsIllustration from "../assets/person-skills.svg";
 
 let Skills = () => {
   return (
     <div className="skills container" id="skills">
-      <h1>My Skills</h1>
-      <div id="skill-text">
-        I thrive on embracing diverse technologies, constantly learning and
-        implementing what I really like.
-      </div>
-      <div className="row">
-        <div className="col-md-6"></div>
-        <div className="col-md-6 skill-icons">
+      <div className="row skill-row">
+        <div className="col-md-5">
+          <img src={skillsIllustration} alt="programmer" id="skill-img" />
+        </div>
+        <div className="col-md-7 skill-icons">
+          <h1>My Skills</h1>
+          <div id="skill-text">
+            I thrive on embracing diverse technologies, constantly learning and
+            implementing what I really like.
+          </div>
           <ul className="dev-icons">
             <li className="skill-inline">
               <FontAwesomeIcon icon={faHtml5} />
@@ -57,7 +60,7 @@ let Skills = () => {
             </li>
             <li className="skill-inline">
               <FontAwesomeIcon icon={faDocker} />
-              <p>faDocker</p>
+              <p>Docker</p>
             </li>
           </ul>
         </div>
