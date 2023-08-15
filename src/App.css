@@ -33,11 +33,11 @@ body {
 
 .main {
   background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #01aac7 100%);
+  background-image: linear-gradient(160deg, #0093E9 0%,  #46bedc  100%);
 
   /* background: #780206; 
 background: linear-gradient(to right, #061161, #780206);  */
-
+/* #01aac7 */
   /* background-attachment: fixed; */
   /* background-color: #8BC6EC;
   background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%); */
@@ -59,6 +59,9 @@ background: linear-gradient(to right, #061161, #780206);  */
   color:white !important;
   border: #46bedc 1px solid !important;
   
+}
+.btn-project {
+  padding-top: 1rem;
 }
 .more-projects:hover {
  color: #0093E9 !important;
@@ -125,8 +128,10 @@ p {
 }
 .project-card {
   margin: 0.5rem;
-  background-color: #46bedc !important;
+  background-color: #2bb6dc !important;
   /* box-shadow: #b5d3e4 0px 10px 30px -15px; */
+  width: 48%;
+  display: inline-block !important
 }
 
 .skill-row {
@@ -135,25 +140,35 @@ p {
 }
 .experience-card-own {
   margin: 1rem;
-  border: #0093E9 solid;
+  border: #02646e solid;
   border-radius: 2%;
 
   /* padding: 2; */
 }
 
+.scroll-button {
+  position: fixed;
+  left: 90%;
+  bottom: 70px;
+  /* size: 10%; */
+  /* width: 5%;
+  height: 10%; */
+  color: #2bb6dc !important;
+}
 .company-icon {
   position: relative;
   width: 20% !important;
   height: 100%;
+  padding-top: 25%;
+  border-radius: 25%;
   /* margin-left: 12%; */
 
 }
-.company-name {
- /* border-right: #0093E9 2px solid; */
-}
-
 #skill-text {
   font-size: larger;
+}
+#more-skill {
+  font-size: medium;
 }
 #headerImage {
   width: 10%;
@@ -169,6 +184,21 @@ p {
   color: #0093E9;
 }
 
+.company-name {
+  padding-top: 20%
+}
+
+#ge-div {
+  color: #3B73B9;
+}
+
+#tcs-details {
+
+  background-image: linear-gradient(to right, #FDB90E 0%, #F80102 50%, #7800DA 100%);
+  border-radius: 5% 0% 0% 5%;
+}
+#tcs-div {  
+}
 #brand-name {
   padding-left: 0.5rem;
 }
@@ -211,9 +241,33 @@ p {
 
 }
 
-#contact {
-  display:flexbox;
-  align-items: center !important;
+.contact-header-text {
+  display:block;
+  padding-left: 33%;
+  padding-top: 10%;
+}
+
+.social-icons {
+  /* margin: 1rem; */
+  padding-left: 33%;
+  align-items: center;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+
+.social-contact {
+  /* padding: rem; */
+  padding-left: 7%;
+  font-size: x-large;
+  color: #fff;
+}
+
+.footer {
+  text-align: center;
+  padding-bottom: 5%;
+}
+.social-contact:hover {
+  color: #02646e;
 }
 /* experience card */
 .experience-card {

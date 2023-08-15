@@ -10,6 +10,8 @@ import {
   faDocker,
   faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
+import azureIcon from "../assets/azure.svg";
+import kubernetesIcon from "../assets/kubernetes.svg";
 import skillsIllustration from "../assets/person-skills.svg";
 
 let Skills = () => {
@@ -62,6 +64,7 @@ let Skills = () => {
               <FontAwesomeIcon icon={faDocker} />
               <p>Docker</p>
             </li>
+            <span id="more-skill">and many others!</span>
           </ul>
         </div>
       </div>

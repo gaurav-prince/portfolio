@@ -3,11 +3,11 @@ import companyImg2 from "../assets/ge_logo.svg";
 let Experience = () => {
   return (
     <div className="container experience" id="experience">
-      <h2>Experiences</h2>
+      <h1>Experiences</h1>
       <div className="row">
         <div className="col-md-6 experience-card-own">
           <div className="row">
-            <div className="col-md-3 company-name">
+            <div className="col-md-3 company-name" id="tcs-div">
               <h4>Tata Consultancy Services</h4>
             </div>
             {/* <div className="col-md-1"> */}
@@ -37,8 +37,8 @@ let Experience = () => {
         </div>
         <div className="col-md-5 experience-card-own">
           <div className="row">
-            <div className="col-md-3 company-name border-right">
-              <h4>Large Name</h4>
+            <div className="col-md-3 company-name border-right" id="ge-div">
+              <h4 id="ge-text">General Electric Co.</h4>
             </div>
             <img
               src={companyImg2}

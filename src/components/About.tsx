@@ -17,6 +17,9 @@ let About = () => {
             className="btn btn-light rounded-circle social"
             type="button"
             id="btn-github"
+            onClick={() => {
+              window.open("https://github.com/gaurav-prince", "_blank");
+            }}
           >
             <i className="bi bi-github"></i>
           </button>
@@ -24,6 +27,12 @@ let About = () => {
             className="btn btn-light rounded-circle social"
             type="button"
             id="btn-linkedin-social"
+            onClick={() => {
+              window.open(
+                "https://www.linkedin.com/in/gaurav-kumar-prince",
+                "_blank"
+              );
+            }}
           >
             <i className="bi bi-linkedin"></i>
           </button>
@@ -31,6 +40,9 @@ let About = () => {
             className="btn btn-light rounded-circle social"
             type="button"
             id="btn-google"
+            onClick={() => {
+              window.open("mailto:gaurav.prince.official@gmail.com", "_blank");
+            }}
           >
             <i className="bi bi-google"></i>
           </button>
@@ -38,6 +50,9 @@ let About = () => {
             className="btn btn-light rounded-circle social"
             type="button"
             id="btn-twitter"
+            onClick={() => {
+              window.open("https://twitter.com/gaurav_prince_", "_blank");
+            }}
           >
             <i className="bi bi-twitter"></i>
           </button>

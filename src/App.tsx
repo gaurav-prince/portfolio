@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Skills from "./components/Skills";
+import ScrollButton from "./components/ScrollToTop";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -46,6 +47,7 @@ function App() {
           <Projects />
           <Experience />
           <Contact />
+          <ScrollButton />
         </>
       )}
     </div>

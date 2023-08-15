@@ -9,6 +9,7 @@ import { ThemeContext, themes } from "./ThemeContext";
 
 let Header = () => {
   const [darkMode, setDarkMode] = useState(true);
+  const [aboutVisible, setAboutVisible] = useState(false);
 
   return (
     <>
@@ -52,7 +53,13 @@ let Header = () => {
           <div className="header-menu" id="navbarNavDropdown">
             <ul className="navbar-nav me-auto mb-2 ">
               <li className="nav-item">
-                <a className="nav-link" href="#about">
+                <a
+                  className="nav-link"
+                  href="#about"
+                  onClick={() => {
+                    setAboutVisible(!aboutVisible);
+                  }}
+                >
                   About
                 </a>
               </li>
