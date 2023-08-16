@@ -12,6 +12,17 @@ import ScrollButton from "./components/ScrollToTop";
 
 function App() {
   const [loading, setLoading] = useState(false);
+  const [theme, setTheme] = useState("light");
+  const [isDark, setIsDark] = useState(false);
+  const toggleTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+      setIsDark(true);
+    } else {
+      setTheme("light");
+      setIsDark(true);
+    }
+  };
 
   const override: CSSProperties = {
     position: "absolute",
@@ -24,9 +35,10 @@ function App() {
     setTimeout(() => {
       setLoading(false);
     }, 2000);
-  }, []);
+    document.body.className = theme;
+  }, [theme]);
   return (
-    <div className="main">
+    <div className={`App ${theme} main`}>
       {loading ? (
         <>
           <HashLoader
@@ -36,10 +48,12 @@ function App() {
             size={150}
             aria-label="Loading Spinner"
             data-testid="loader"
+            id="hashloader"
           />
         </>
       ) : (
         <>
+          <button onClick={toggleTheme}>Toggle Theme</button>
           <Header />
           <Home />
           <About />

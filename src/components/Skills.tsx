@@ -10,8 +10,8 @@ import {
   faDocker,
   faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
-import azureIcon from "../assets/azure.svg";
-import kubernetesIcon from "../assets/kubernetes.svg";
+// import azureIcon from "../assets/azure.svg";
+// import kubernetesIcon from "../assets/kubernetes.svg";
 import skillsIllustration from "../assets/person-skills.svg";
 
 let Skills = () => {
@@ -22,7 +22,7 @@ let Skills = () => {
           <img src={skillsIllustration} alt="programmer" id="skill-img" />
         </div>
         <div className="col-md-7 skill-icons">
-          <h1>My Skills</h1>
+          <h1 id="skill-header">My Skills</h1>
           <div id="skill-text">
             I thrive on embracing diverse technologies, constantly learning and
             implementing what I really like.

@@ -4,11 +4,12 @@ let Home = () => {
   return (
     <>
       <div className="container py-4" id="home">
-        <div className="row p-5 mb-4 rounded-3">
-          <div className="col-md-8 h-100 p-5">
+        <div className="row home-div">
+          <div className="col-md-8 col-sm-6 col-xs-6 col-home-text">
             <h1 className="display-5 fw-bold hello-text">Hello There!</h1>
             <p className="fs-4">
               <span id="name-text">This is Gaurav Prince. </span>
+              <br id="space-for-small-device" />
               <TypeAnimation
                 sequence={[
                   "I'm a Software Engineer.",
@@ -21,6 +22,7 @@ let Home = () => {
                 speed={50}
                 style={{ fontSize: "1em" }}
                 repeat={Infinity}
+                id="job-title-text"
               />
               {/* <span id="job-title-text">I'm a Software Engineer.</span> */}
             </p>

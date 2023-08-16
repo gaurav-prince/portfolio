@@ -33,8 +33,9 @@ body {
 
 .main {
   background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%,  #46bedc  100%);
-
+  /* background-image: linear-gradient(160deg, #0093E9 0%,  #00b6fe  100%); */
+  background-image: linear-gradient(to top, #30b5d0 0%, #330867 100%);
+  /* background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% ); */
   /* background: #780206; 
 background: linear-gradient(to right, #061161, #780206);  */
 /* #01aac7 */
@@ -51,13 +52,16 @@ background: linear-gradient(to right, #061161, #780206);  */
 }
 
 .dark {
-  background-image: radial-gradient( circle 815px at 23.4% -21.8%,  rgba(9,29,85,1) 0.2%, rgba(0,0,0,1) 100.2% );
+  /* background-image: radial-gradient( circle 815px at 23.4% -21.8%,  #091d55 0.2%, rgba(0,0,0,1) 100.2% ); */
+
+background: linear-gradient(170deg, #2c3e50, #171C28); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .card {
   background: transparent !important;
   color:white !important;
-  border: #46bedc 1px solid !important;
+  border: #326CA4 1px solid !important;
   
 }
 .btn-project {
@@ -68,7 +72,7 @@ background: linear-gradient(to right, #061161, #780206);  */
 }
 .card:hover {
   box-shadow: #4a99c7 3px 3px 3px;
-  background-color: #51e1f7 !important;
+  background-color: #3E86CC !important;
 }
 .project-size {
   float: right;
@@ -86,7 +90,9 @@ background: linear-gradient(to right, #061161, #780206);  */
   padding-left: 2px;
   color: whitesmoke;
 }
-
+.project-desc {
+  font-size: medium;
+}
 .header-brand:hover {
   color: #b5d3e4 !important;
 }
@@ -128,8 +134,10 @@ p {
 }
 .project-card {
   margin: 0.5rem;
-  background-color: #2bb6dc !important;
-  /* box-shadow: #b5d3e4 0px 10px 30px -15px; */
+  background-color: linear-gradient(to top, #30b5d0 0%, #330867 100%) !important;
+  box-shadow: #5591c9 0px 0px 30px ;
+  /* border-radius: 0% !important; */
+  /* border: #326CA4 solid 2px !important; */
   width: 48%;
   display: inline-block !important
 }
@@ -146,6 +154,13 @@ p {
   /* padding: 2; */
 }
 
+.home-div {
+  padding: 3rem !important;
+  margin-bottom: 1.5rem !important;
+}
+.col-home-text {
+  padding: 3rem !important;
+}
 .scroll-button {
   position: fixed;
   left: 90%;
@@ -197,8 +212,6 @@ p {
   background-image: linear-gradient(to right, #FDB90E 0%, #F80102 50%, #7800DA 100%);
   border-radius: 5% 0% 0% 5%;
 }
-#tcs-div {  
-}
 #brand-name {
   padding-left: 0.5rem;
 }
@@ -239,6 +252,10 @@ p {
 #desc-text {
   color: aliceblue !important;
 
+}
+
+#space-for-small-device {
+  display: none;
 }
 
 .contact-header-text {
@@ -374,12 +391,90 @@ p {
   display: none;
 }
 
+
+/* .dark {
+  background-color: #333;
+  color: #fff;
+} */
+.light {
+  background-color: #fff;
+  color: #333;
+}
+
+
 @media screen and (max-width: 600px) {
-  /* .hamburger-menu {
+  .header-container {
+    display: none;
+  }
+  .hamburger-menu {
     display: flex;
-  } */
+  }
+  #desc-text {
+    font-size: 16px;
+    text-align: center;
+  }
+  #space-for-small-device {
+    display: block;
+  }
+  #skill-header {
+    font-size: 30px;
+    text-align: center;
+  }
+  #skill-text {
+    font-size: 16px;
+    text-align: center;
+  }
+  #person-hello {
+    display: none;
+  }
+  #skill-img {
+    border-radius: 50% 20% / 10% 40%;
+    width: 100%;
+    height: 65%
+  }
+  #hashloader {
+    top: "40%" !important; 
+    left: "0%" !important;
+  }
+  .name-text {
+    font-size: 30px;
+    text-align: center;
+  }
 
   .header-menu {
     display: none;
+  }
+
+  .home-div {
+    padding: 1% !important;
+    margin-bottom: 1rem !important;
+    
+  }
+
+  .col-home-text {
+    padding: 1rem !important;
+    text-align: center;
+  }
+  .image {
+    padding: 3rem !important;
+  }
+
+  .project-card {
+    margin: 0.5rem;
+    width: 95%;
+    display: inline-block !important
+  }
+  .scroll-button {
+    left: 80%;
+    bottom: 50px;
+  }
+
+  .contact-header-text {
+    /* display: block; */
+    padding-left: 15%;
+    padding-top: 10%;
+  }
+  .social-icons {
+    padding-left: 25%;
   }
 }

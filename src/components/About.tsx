@@ -2,7 +2,7 @@ import personIllustration from "../assets/person-namaste.svg";
 let About = () => {
   return (
     <div className="container py-4" id="about">
-      <div className="row p-5 mb-4 rounded-3">
+      <div className="row home-div">
         <div className="col-md-8 h-100 p-5">
           <h1 className="display-5 fw-bold hello-text">Hi All, I'm Gaurav</h1>
           <p className="fs-4">
@@ -57,7 +57,7 @@ let About = () => {
             <i className="bi bi-twitter"></i>
           </button>
         </div>
-        <div className="col-md-4 image">
+        <div className="col-md-4 image-about">
           <img src={personIllustration} alt="programmer" id="person-hello" />
         </div>
       </div>

@@ -3,13 +3,14 @@ import "../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import headerDarkImgUrl from "../assets/logo_light.png";
 import { faBars, faCode } from "@fortawesome/free-solid-svg-icons";
-import { slide as Menu } from "react-burger-menu";
-import { useState } from "react";
-import { ThemeContext, themes } from "./ThemeContext";
+import { slide as Menu, Props } from "react-burger-menu";
+import { useEffect, useState } from "react";
+import DarkModeToggle from "react-dark-mode-toggle";
 
-let Header = () => {
+let Header = (props: any) => {
   const [darkMode, setDarkMode] = useState(true);
   const [aboutVisible, setAboutVisible] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => false);
 
   return (
     <>
@@ -83,23 +84,13 @@ let Header = () => {
                   Contact Me
                 </a>
               </li>
+
               <li className="checkbox-switch">
-                <div className="form-switch">
-                  <ThemeContext.Consumer>
-                    {({ changeTheme }) => (
-                      <input
-                        className="form-check-input"
-                        type="checkbox"
-                        role="switch"
-                        id="darkswitch"
-                        onClick={() => {
-                          setDarkMode(!darkMode);
-                          changeTheme(darkMode ? themes.light : themes.dark);
-                        }}
-                      />
-                    )}
-                  </ThemeContext.Consumer>
-                </div>
+                <DarkModeToggle
+                  onChange={setIsDarkMode}
+                  checked={isDarkMode}
+                  size={40}
+                />
               </li>
             </ul>
           </div>

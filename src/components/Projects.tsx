@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBookBookmark } from "@fortawesome/free-solid-svg-icons";
 let Projects = () => {
   let dataForm = [
     {
@@ -8,10 +9,11 @@ let Projects = () => {
       language: "",
       size: "0",
       starCount: "0",
+      url: "",
     },
   ];
   const [data, setData] = useState(dataForm);
-
+  const githuburl = "https://github.com/gaurav-prince";
   useEffect(() => {
     // fetch data
     const dataFetch = async () => {
@@ -26,22 +28,40 @@ let Projects = () => {
             language: obj.language,
             size: obj.size,
             starCount: obj.stargazers_count,
+            url: obj.html_url,
           },
         ])
         .flat();
       // set state when the data received
+
       setData(data);
       console.log(data);
+      // data.forEach((obj: any) => {
+      //   if (obj.desc && obj.desc.length > 0) {
+      //     obj.desc = obj.desc.toString().subString(0, 50);
+      //   }
+      // });
+      // console.log("after", data);
     };
     dataFetch();
   }, []);
 
   const projectCards = data.map((repo) => {
+    let url = repo.url;
     if (parseInt(repo.starCount) > 0) {
       return (
-        <div className="card project-card" key={repo.name}>
+        <div
+          className="card project-card"
+          key={repo.name}
+          onClick={() => {
+            window.open(url, "_blank");
+          }}
+        >
           <div className="card-body">
-            <h5 className="card-title">{repo.name}</h5>
+            <h4 className="card-title">
+              <FontAwesomeIcon icon={faBookBookmark} /> {"  "}
+              {repo.name}
+            </h4>
             {/* <h6 className="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> */}
             <p className="project-desc">
               {repo.desc || "No Description Found"}
@@ -63,7 +83,12 @@ let Projects = () => {
       <h1 className="display-5 fw-bold">Open Source Projects!</h1>
       <div className="">{projectCards}</div>
       <div className="h-100 d-flex align-items-center justify-content-center btn-project">
-        <button className="btn btn-outline-light more-projects">
+        <button
+          className="btn btn-outline-light more-projects"
+          onClick={() => {
+            window.open(githuburl, "_blank");
+          }}
+        >
           More Projects
         </button>
       </div>
