@@ -2,16 +2,19 @@ import "../App.css";
 // import headerLightImgUrl from "../assets/logo_3.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import headerDarkImgUrl from "../assets/logo_light.png";
-import { faBars, faCode } from "@fortawesome/free-solid-svg-icons";
-import { slide as Menu, Props } from "react-burger-menu";
-import { useEffect, useState } from "react";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+// import { slide as Menu, Props } from "react-burger-menu";
+import { useState } from "react";
 import DarkModeToggle from "react-dark-mode-toggle";
 
 let Header = (props: any) => {
-  const [darkMode, setDarkMode] = useState(true);
+  // const [darkMode, setDarkMode] = useState(true);
   const [aboutVisible, setAboutVisible] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(() => false);
 
+  const handleDarkModeChange = () => {
+    setIsDarkMode(!isDarkMode);
+  };
   return (
     <>
       <nav className="navbar navbar-expand-lg">
@@ -85,9 +88,9 @@ let Header = (props: any) => {
                 </a>
               </li>
 
-              <li className="checkbox-switch">
+              <li className="checkbox-switch" onClick={handleDarkModeChange}>
                 <DarkModeToggle
-                  onChange={setIsDarkMode}
+                  onChange={props.toggleTheme}
                   checked={isDarkMode}
                   size={40}
                 />

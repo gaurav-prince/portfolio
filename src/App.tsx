@@ -10,20 +10,16 @@ import Contact from "./components/Contact";
 import Skills from "./components/Skills";
 import ScrollButton from "./components/ScrollToTop";
 
-function App() {
+function App(this: any) {
   const [loading, setLoading] = useState(false);
   const [theme, setTheme] = useState("light");
-  const [isDark, setIsDark] = useState(false);
   const toggleTheme = () => {
     if (theme === "light") {
       setTheme("dark");
-      setIsDark(true);
     } else {
       setTheme("light");
-      setIsDark(true);
     }
   };
-
   const override: CSSProperties = {
     position: "absolute",
     top: "40%",
@@ -36,7 +32,7 @@ function App() {
       setLoading(false);
     }, 2000);
     document.body.className = theme;
-  }, [theme]);
+  }, []);
   return (
     <div className={`App ${theme} main`}>
       {loading ? (
@@ -53,8 +49,8 @@ function App() {
         </>
       ) : (
         <>
-          <button onClick={toggleTheme}>Toggle Theme</button>
-          <Header />
+          {/* <button onClick={toggleTheme}>Toggle Theme</button> */}
+          <Header toggleTheme={toggleTheme.bind(this)} />
           <Home />
           <About />
           <Skills />
