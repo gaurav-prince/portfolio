@@ -35,7 +35,7 @@ let Projects = () => {
       // set state when the data received
 
       setData(data);
-      console.log(data);
+      // console.log(data);
       // data.forEach((obj: any) => {
       //   if (obj.desc && obj.desc.length > 0) {
       //     obj.desc = obj.desc.toString().subString(0, 50);

@@ -1,6 +1,6 @@
 import { useState, useEffect, CSSProperties } from "react";
 import HashLoader from "react-spinners/HashLoader";
-import "./App.css";
+import "./App.scss";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";

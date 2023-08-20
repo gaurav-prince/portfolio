@@ -1,4 +1,3 @@
-import "../App.css";
 import headerLightImgUrl from "../assets/g-text.png";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import headerDarkImgUrl from "../assets/logo_light.png";
