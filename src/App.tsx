@@ -38,7 +38,7 @@ function App(this: any) {
       {loading ? (
         <>
           <HashLoader
-            color="#0093E9"
+            color="#330867"
             loading={loading}
             cssOverride={override}
             size={150}
