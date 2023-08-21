@@ -30,7 +30,8 @@ body {
 
 .main {
   /* background-color: #0093E9; */
-  background-image: linear-gradient(to top, #30b5d0 0%, #30b5d030 20%, #8348cb30 92%, #33086780 97%, #330867 100%);
+  /* background-image: linear-gradient(to top, #30b5d0 0%, #30b5d030 20%, #8348cb30 92%, #33086780 97%, #330867 100%); */
+  /* background-image: linear-gradient(to top, #fff 0%, #fff 97%, #330867 100%); */
   color: darkslategrey !important;
   /* background-image: linear-gradient(160deg, #0093E9 0%,  #00b6fe  100%); */
   /* background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% ); */
@@ -97,7 +98,6 @@ background: linear-gradient(to right, #061161, #780206);  */
   font-size: smaller !important;
 }
 
-.hello-text {}
 
 .header-brand {
   display: inline;
@@ -108,7 +108,6 @@ background: linear-gradient(to right, #061161, #780206);  */
   font-size: medium;
 }
 
-.header-brand:hover {}
 
 .skill-inline {
   display: inline-block;
@@ -307,8 +306,6 @@ p {
   color: #0093E9;
 }
 
-#job-title-text {}
-
 .dark #name-text {
   color: rgb(218, 246, 9)
 }
@@ -317,8 +314,6 @@ p {
   color: #33086790;
 }
 
-
-#desc-text {}
 
 #space-for-small-device {
   display: none;

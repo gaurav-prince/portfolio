@@ -1,4 +1,5 @@
-import headerLightImgUrl from "../assets/g-text.png";
+import headerLightImgUrl from "../assets/gp-text.png";
+import headerDarkImgUrl from "../assets/gp-text-w.png";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import headerDarkImgUrl from "../assets/logo_light.png";
 // import { faCode } from "@fortawesome/free-solid-svg-icons";
@@ -25,7 +26,7 @@ let Header = (props: any) => {
             </h3> */}
 
             <img
-              src={headerLightImgUrl}
+              src={isDarkMode ? headerDarkImgUrl : headerLightImgUrl}
               alt="Gaurav Prince"
               id="headerImage"
               width="50"

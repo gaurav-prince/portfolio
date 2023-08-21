@@ -7,6 +7,8 @@ body {
   float: right;
   align-items: end !important;
   margin-right: 2rem;
+  color: #000;
+  // font-size: large;
 }
 
 .nav-link {
@@ -19,51 +21,57 @@ body {
   color: aquamarine;
 }
 
-.nav-item:hover {
-  /* color: Blue; */
-  border-bottom: 3px solid rgb(255, 255, 255);
-  /* color: #0093E9 !important; */
-}
+
 
 .navbar-brand {
   padding-left: 2rem;
 }
 
 .light {
-  background-image: linear-gradient(
-    to top,
-    #30b5d0 0%,
-    #6bbccc30 20%,
-    #9565cf30 92%,
-    #33086780 97%,
-    #330867 100%
-  );
-  color: darkslategrey !important;
-
+  // background-image: linear-gradient(
+  //   to top,
+  //   #30b5d0 0%,
+  //   #6bbccc30 20%,
+  //   #9565cf30 92%,
+  //   #33086780 97%,
+  //   #330867 100%
+  // );
+  // background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  color: #442e81; //darkslategrey !important;
+  // background:#aeaef3;
+  //#E8EFFF; //#7899e3 
+  /* background-image: linear-gradient(to top, #30b5d0 0%, #30b5d030 20%, #8348cb30 92%, #33086780 97%, #330867 100%); */
+  // background-image: linear-gradient(to top, #fff 0%, #fff 97%, #330867 100%); 
+  // background-image: linear-gradient(160deg, #0093E9 0%,  #00b6fe  100%);
   .btn,
   .card-body {
-    color: darkslategrey !important;
+    color: #442e81 !important;
   }
   .nav-link {
-    color: whitesmoke !important;
+    color: #442e81 !important;
   }
   #name-text {
     color: #33086790;
   }
 
   a {
-    color: #0d6efd;
+    color: #442e81;
+  }
+  .nav-item:hover {
+    /* color: Blue; */
+    border-bottom: 3px solid #442e81;
+    /* color: #0093E9 !important; */
   }
 
   .btn:hover {
-    background-color: #330867;
-    color: whitesmoke !important;
+    background-color:  #330867 ;
+    color: #fff !important;
   }
   .skill-inline:hover {
-    color: #0093e9;
+    color: #8c4ed8;
   }
   .project-card:hover {
-    box-shadow: #0093e9 0px 0px 8px;
+    box-shadow: #330867 0px 0px 8px;
     // background-color: #0d6efd !important;
   }
 
@@ -73,14 +81,15 @@ body {
   }
 
   .card-experience {
-    border: #2c3e50 1px solid !important;
-    box-shadow: #2c3e50 0px 0px 5px;
+    border: #3e2c50 1px solid !important;
+    box-shadow: #392c50 0px 0px 5px;
   }
   .card-experience:hover {
-    box-shadow: #0093e9 0px 0px 8px;
+    box-shadow: #330867 0px 0px 8px;
   }
   .skill-name {
-    background-color: #0093e9;
+    border: #330867 1px solid;
+    color: #330867;
   }
 }
 
@@ -90,6 +99,11 @@ body {
 
   a {
     color: #7060dd;
+  }
+  .nav-item:hover {
+    /* color: Blue; */
+    border-bottom: 3px solid #fff;
+    /* color: #0093E9 !important; */
   }
   .btn,
   .card-body,
@@ -142,9 +156,6 @@ body {
   padding-top: 1rem;
 }
 
-.more-projects:hover {
-  //   color: #0093e9 !important;
-}
 .project-size {
   float: right;
   align-items: end !important;
@@ -155,9 +166,6 @@ body {
   font-size: smaller !important;
 }
 
-.hello-text {
-}
-
 .header-brand {
   display: inline;
   padding-left: 2px;
@@ -165,9 +173,6 @@ body {
 
 .project-desc {
   font-size: medium;
-}
-
-.header-brand:hover {
 }
 
 .skill-inline {
@@ -212,7 +217,7 @@ p {
   //     #330867 100%
   //   ) !important;
 
-  box-shadow: #2c3e50 0px 0px 5px;
+  box-shadow: #330867 0px 0px 5px;
   width: 48%;
   display: inline-block !important;
 }
@@ -247,6 +252,7 @@ p {
   /* width: 5%;
     height: 10%; */
   color: #2bb6dc !important;
+  border: #330867 1px solid ;
 }
 
 .company-icon {
@@ -303,6 +309,7 @@ p {
 #btn-linkedin {
   padding: 0.5rem;
   margin: 1rem;
+  border: 1px solid;
 }
 
 #btn-linkedin:hover {
@@ -353,14 +360,13 @@ p {
   } */
 #btn-cv {
   padding: 0.5rem;
+  border: 1px solid;
 }
 
 #btn-cv:hover {
   color: #0093e9;
 }
 
-#job-title-text {
-}
 
 #space-for-small-device {
   display: none;
@@ -611,6 +617,7 @@ p {
   .scroll-button {
     left: 80%;
     bottom: 50px;
+    border: 1px solid ;
   }
 
   .contact-header-text {

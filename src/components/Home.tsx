@@ -1,5 +1,7 @@
 import workIllustration from "../assets/engineer-1.svg";
 import { TypeAnimation } from "react-type-animation";
+import CV from "../assets/Resume.pdf";
+
 let Home = () => {
   return (
     <>
@@ -26,13 +28,15 @@ let Home = () => {
               />
               {/* <span id="job-title-text">I'm a Software Engineer.</span> */}
             </p>
-            <button
-              className="btn btn-outline-light rounded-pill"
-              type="button"
-              id="btn-cv"
-            >
-              Check My CV
-            </button>
+            <a href={CV} download="Resume-Gaurav" target="_blank">
+              <button
+                className="btn btn-outline-light rounded-pill"
+                type="button"
+                id="btn-cv"
+              >
+                Check My CV
+              </button>
+            </a>
             <button
               className="btn btn-outline-light rounded-pill"
               type="button"
