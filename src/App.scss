@@ -164,6 +164,8 @@ body {
 
 .project-language {
   font-size: smaller !important;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
 }
 
 .header-brand {
@@ -524,7 +526,15 @@ p {
   text-align: center;
 }
 
+.nav-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
+  .nav-mobile {
+  display: inline !important;
+}
+  
   .header-container {
     display: none;
   }
@@ -545,6 +555,25 @@ p {
 
   .navbar-brand {
     text-align: center !important;
+  }
+
+  .navbar > .container-fluid {
+    display: block !important;
+  }
+
+  .navbar-toggler {
+    margin-left: 4rem;
+  }
+
+  .canvas-dark {
+    background: linear-gradient(170deg, #2c3e50, #171c28);
+    color: whitesmoke !important;
+  }
+  .btn-dark {
+    color: whitesmoke !important;
+  }
+  .offcanvas.offcanvas-end {
+    width: 45% !important;
   }
 
   #tcs-card {

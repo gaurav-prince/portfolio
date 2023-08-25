@@ -11,9 +11,19 @@ let Header = (props: any) => {
   // const [darkMode, setDarkMode] = useState(true);
   const [aboutVisible, setAboutVisible] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(() => false);
+  const [show, setShow] = useState("");
 
   const handleDarkModeChange = () => {
     setIsDarkMode(!isDarkMode);
+    setShow("");
+  };
+
+  const handleNavbarShow = () => {
+    setShow("show");
+  };
+
+  const handleNavbarHide = () => {
+    setShow("");
   };
   return (
     <>
@@ -50,79 +60,77 @@ let Header = (props: any) => {
               Contact Me
             </a>
           </Menu> */}
-          {/* <div className="container-fluid">
+          <div className="nav-mobile">
             <button
-              className="navbar-toggler"
+              className={`navbar-toggler ${isDarkMode ? "btn-dark" : ""}`}
               type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-label="Toggle navigation"
+              onClick={handleNavbarShow}
             >
-              <span className="navbar-toggler-icon"></span>
+              <i className="bi bi-list"></i>
             </button>
             <div
-              className="offcanvas offcanvas-end"
+              className={`offcanvas ${show} ${
+                isDarkMode ? "canvas-dark" : ""
+              } offcanvas-end`}
               id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel"
             >
               <div className="offcanvas-header">
-                <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-                  Offcanvas
+                <h5 className="offcanvas-title" id="offcanvasRightLabel">
+                  Menu
                 </h5>
                 <button
                   type="button"
-                  className="btn-close"
+                  onClick={handleNavbarHide}
+                  className={`btn-close ${isDarkMode ? "btn-dark" : ""}`}
                   data-bs-dismiss="offcanvas"
                   aria-label="Close"
                 ></button>
               </div>
               <div className="offcanvas-body">
                 <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#">
-                      Home
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">
-                      Link
-                    </a>
-                  </li>
-                  <li className="nav-item dropdown">
+                  <li className="nav-item" onClick={handleNavbarHide}>
                     <a
-                      className="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
+                      className="nav-link active"
+                      aria-current="page"
+                      href="#about"
                     >
-                      Dropdown
+                      About
                     </a>
-                    <ul className="dropdown-menu">
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Action
-                        </a>
-                      </li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Another action
-                        </a>
-                      </li>
-                      <li></li>
-                      <li>
-                        <a className="dropdown-item" href="#">
-                          Something else here
-                        </a>
-                      </li>
-                    </ul>
+                  </li>
+                  <li className="nav-item" onClick={handleNavbarHide}>
+                    <a className="nav-link" href="#skills">
+                      Skills
+                    </a>
+                  </li>
+                  <li className="nav-item" onClick={handleNavbarHide}>
+                    <a className="nav-link" href="#projects">
+                      Projects
+                    </a>
+                  </li>
+                  <li className="nav-item" onClick={handleNavbarHide}>
+                    <a className="nav-link" href="#experience">
+                      Experience
+                    </a>
+                  </li>
+                  <li className="nav-item" onClick={handleNavbarHide}>
+                    <a className="nav-link" href="#contact">
+                      Contact
+                    </a>
+                  </li>
+                  <li
+                    className="checkbox-switch"
+                    onClick={handleDarkModeChange}
+                  >
+                    <DarkModeToggle
+                      onChange={props.toggleTheme}
+                      checked={isDarkMode}
+                      size={40}
+                    />
                   </li>
                 </ul>
               </div>
             </div>
-            
-          </div> */}
+          </div>
           {/* <button classNameName="btn">
               <FontAwesomeIcon icon={faBars} />
             </button> */}
