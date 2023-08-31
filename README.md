@@ -1,27 +1,76 @@
-# React + TypeScript + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The repository contains the code for my personal Portfolio which has been built on React. It is hosted with firebase and bootstrapped with Vite.
 
-Currently, two official plugins are available:
+You can also see the live website [here](https://www.gauravprince.in/).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Repository Structure
 
-## Expanding the ESLint configuration
+The repository structure is shown as below:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```
+ Portfolio
+ ┣ public
+ ┣ src
+ ┃ ┣ assets
+ ┃ ┣ components
+ ┃ ┃ ┣ About.tsx
+ ┃ ┃ ┣ Contact.tsx
+ ┃ ┃ ┣ Experience.tsx
+ ┃ ┃ ┣ Header.tsx
+ ┃ ┃ ┣ Home.tsx
+ ┃ ┃ ┣ Projects.tsx
+ ┃ ┃ ┣ ScrollToTop.tsx
+ ┃ ┃ ┗ Skills.tsx
+ ┃ ┣ App.css
+ ┃ ┣ App.scss
+ ┃ ┣ App.tsx
+ ┃ ┣ index.css
+ ┃ ┣ main.tsx
+ ┃ ┗ vite-env.d.ts
+ ┣ firebase.json
+ ┣ index.html
+ ┣ package-lock.json
+ ┣ package.json
+ ┣ tsconfig.json
+ ┣ tsconfig.node.json
+ ┗ vite.config.ts
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Portfolio Sections
+
+Below sections have been added to the portfolio:
+
+- Home
+- About
+- Skills
+- Projects
+- Experience
+- Contact
+
+These individual sections are divided in different components and are kept inside the `component` folder.
+
+## Fork and customize
+
+Feel free to fork this repository and customize it on your own.
+
+Just clone/fork this repo, change details and themes as per your wish.
+
+To run this project: Open the directory in command prompt and run `npm run serve` .
+
+For deployments you can set up a firebase with this project and deploy on your domain.
+
+## Libraries used
+
+- react
+- bootstrap
+- vite
+- react-burger-menu
+- react-spinners
+- react-type-animation
+- fontawesome
+- firebase
+
+### Illustrations
+
+Pictures and illustrations downloaded from [freepik.com](freepik.com)
