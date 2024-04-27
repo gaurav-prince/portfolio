@@ -14,7 +14,7 @@ let Home = () => {
               <br id="space-for-small-device" />
               <TypeAnimation
                 sequence={[
-                  "I'm a Software Engineer.",
+                  "I'm a Senior Software Engineer.",
                   1000,
                   "I'm a Web Developer.",
                   1000,

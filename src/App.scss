@@ -83,6 +83,8 @@ body {
   .card-experience {
     border: #3e2c50 1px solid !important;
     box-shadow: #392c50 0px 0px 5px;
+    margin-left: 3%;
+    width: 30%;
   }
   .card-experience:hover {
     box-shadow: #330867 0px 0px 8px;
@@ -292,11 +294,9 @@ p {
 #experience-text {
   /* margin-left: 5%; */
   margin-bottom: 2%;
+  margin-top: 2%;
 }
 
-#ge-card {
-  margin-left: 5%;
-}
 
 #skill-text {
   font-size: larger;
@@ -510,10 +510,13 @@ p {
 
 .card-img-top {
   width: 10rem;
-  height: 10rem;
+  height: 5rem;
   margin-top: 10px
 }
 
+.experience-card-subtitle-2 {
+  font: smaller;
+}
 .skill-name {
   display: inline-block;
   align-items: center;
@@ -537,7 +540,7 @@ p {
 @media screen and (max-width: 600px) {
   .nav-mobile {
   display: inline !important;
-}
+  }
   
   .header-container {
     display: none;
@@ -550,6 +553,7 @@ p {
   .card-experience {
     width: 90% !important;
     margin-bottom: 3%;
+    margin-left: 5% !important;
   }
 
   .card-img-top {
@@ -581,15 +585,16 @@ p {
     width: 45% !important;
   }
 
-  #tcs-card {
-    margin-left: 5%;
-  }
-
   #desc-text {
     font-size: 16px;
     text-align: center;
   }
 
+  #experience-text {
+    /* margin-left: 5%; */
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
   #space-for-small-device {
     display: block;
   }
